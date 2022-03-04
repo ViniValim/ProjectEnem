@@ -1,14 +1,12 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, TextInput } from "react-native";
+import { SafeAreaView, StyleSheet, TextInput, TouchableOpacity } from "react-native";
 
-import React from 'react';
-import { TextInput } from 'react-native';
 
 
 
 const UselessTextInput = () => {
-  const [text, onChangeText] = React.useState("Useless Text");
-  const [number, onChangeNumber] = React.useState(null);
+  const [text, onChangeText] = React.useState(null);
+  const [password, onChangeNumber] = React.useState(null);
 
 
   return (
@@ -17,14 +15,16 @@ const UselessTextInput = () => {
         style={styles.input}
         onChangeText={onChangeText}
         value={text}
+        placeholder="E-mail"
       />
       <TextInput
         style={styles.input}
         onChangeText={onChangeNumber}
-        value={number}
+        value={password}
         placeholder="useless placeholder"
-        keyboardType="numeric"
+        keyboardType="password"
       />
+      <TouchableOpacity onPress={() => {}}/>
     </SafeAreaView>
   );
 };

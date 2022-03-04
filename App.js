@@ -7,7 +7,7 @@ import Login from './src/screens/Login'
 export default function App() {
   return  <>
           <Login styles={estilos.container}/>
-          <StatusBar />
+          <StatusBar translucent={true}/>
           </>
 
 }
