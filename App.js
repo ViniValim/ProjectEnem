@@ -3,13 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Login from './src/screens/Login'
 
+
 export default function App() {
   return  <>
           <Login styles={estilos.container}/>
           <StatusBar />
           </>
-}
 
+}
 
 const estilos = StyleSheet.create({
   container: {
@@ -17,5 +18,5 @@ const estilos = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
+  }
 });
