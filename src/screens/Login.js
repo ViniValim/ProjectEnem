@@ -11,20 +11,8 @@ const UselessTextInput = () => {
 
   return (
     <SafeAreaView>
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
-        placeholder="E-mail"
-      />
-      <TextInput
-        style={styles.input}
-        onChangeText={onChangeNumber}
-        value={password}
-        placeholder="useless placeholder"
-        keyboardType="password"
-      />
-      <TouchableOpacity onPress={() => {}}/>
+      <TextInput style={styles.input} placeholder='E-mail' />
+      <TextInput style={styles.input} placeholder='Senha' />
     </SafeAreaView>
   );
 };
