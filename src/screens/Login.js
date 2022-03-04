@@ -1,10 +1,11 @@
 import React from 'react';
-import {InputText, Text, } from 'react-native';
+import {InputText, TextInput } from 'react-native';
+
 
 
 export default function Login (){
     return  <>
-            <InputText>Email</InputText>
-            <InputText>Password</InputText>
+            <TextInput>Email</TextInput>
+            <TextInput>Password</TextInput>
             </>
 }
